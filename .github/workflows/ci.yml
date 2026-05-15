@@ -20,8 +20,8 @@ jobs:
         image: postgres:15
         env:
           POSTGRES_DB: cicd-task-db
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: Sriv@1101
+          POSTGRES_USER: user
+          POSTGRES_PASSWORD: pooja
         ports:
           - 5432:5432
         options: >-
