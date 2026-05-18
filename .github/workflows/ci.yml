@@ -8,6 +8,10 @@ on:
     
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
+permissions:
+  contents: read    # Allowed to read the source code
+  packages: write  # CRITICAL: Allowed to upload Docker images to GHCR
 
 jobs:
   build:
