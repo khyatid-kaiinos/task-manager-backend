@@ -22,6 +22,13 @@ spec:
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:postgresql://task-manager-db-service:5432/cicd-task-db
+        - name: SPRING_DATASOURCE_USERNAME
+          value: postgres
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: prodpass
 ---
 apiVersion: v1
 kind: Service
