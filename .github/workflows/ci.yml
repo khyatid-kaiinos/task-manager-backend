@@ -24,7 +24,7 @@ jobs:
         image: postgres:15
         env:
           POSTGRES_DB: cicd-task-db
-          POSTGRES_USER: user
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: pooja
         ports:
           - 5432:5432
