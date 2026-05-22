@@ -15,7 +15,8 @@ import com.example.demo.repository.TaskRepository;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:3001")
-@CrossOrigin(origins = {"http://localhost:3001", "http://192.168.49.2:30081"})
+//@CrossOrigin(origins = {"http://localhost:3001", "http://192.168.49.2:30081"})
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/tasks")
 public class TaskController {
     @Autowired
